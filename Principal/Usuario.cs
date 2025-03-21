@@ -28,7 +28,7 @@ namespace Principal
             foreach(var usuarioActual in usuarios)
             {
                 resultado += "Nombre: " + usuarioActual.nombre +
-                    " - Descripcion: " + usuarioActual.apellido + "\n";
+                    " - apellido: " + usuarioActual.apellido + "\n";
             }
 
             lbVerUsuario.Text = resultado;

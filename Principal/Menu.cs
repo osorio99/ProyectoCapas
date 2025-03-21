@@ -28,5 +28,15 @@ namespace Principal
             CrearUsuario us = new CrearUsuario();
             us.ShowDialog();
         }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

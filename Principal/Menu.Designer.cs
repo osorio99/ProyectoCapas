@@ -30,6 +30,9 @@
         {
             btUsuario = new Button();
             btCrear = new Button();
+            toolStrip1 = new ToolStrip();
+            toolStripLabel1 = new ToolStripLabel();
+            toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // btUsuario
@@ -52,21 +55,49 @@
             btCrear.UseVisualStyleBackColor = true;
             btCrear.Click += btCrear_Click;
             // 
+            // toolStrip1
+            // 
+            toolStrip1.BackColor = Color.Blue;
+            toolStrip1.Font = new Font("Segoe UI", 25F);
+            toolStrip1.GripMargin = new Padding(4);
+            toolStrip1.ImageScalingSize = new Size(26, 30);
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripLabel1 });
+            toolStrip1.Location = new Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(800, 49);
+            toolStrip1.TabIndex = 2;
+            toolStrip1.Text = "toolStrip1";
+            toolStrip1.ItemClicked += toolStrip1_ItemClicked;
+            // 
+            // toolStripLabel1
+            // 
+            toolStripLabel1.ForeColor = Color.White;
+            toolStripLabel1.Name = "toolStripLabel1";
+            toolStripLabel1.Size = new Size(54, 22);
+            toolStripLabel1.Text = "BIKERIDE";
+            toolStripLabel1.Click += toolStripLabel1_Click;
+            // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(toolStrip1);
             Controls.Add(btCrear);
             Controls.Add(btUsuario);
             Name = "Menu";
             Text = "Menu";
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button btUsuario;
         private Button btCrear;
+        private ToolStrip toolStrip1;
+        private ToolStripLabel toolStripLabel1;
     }
 }
