@@ -19,6 +19,11 @@ namespace Principal
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
             Menu us = new Menu();
             us.ShowDialog();
         }

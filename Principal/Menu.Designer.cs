@@ -30,8 +30,8 @@
         {
             btUsuario = new Button();
             btCrear = new Button();
-            toolStrip1 = new ToolStrip();
             toolStripLabel1 = new ToolStripLabel();
+            toolStrip1 = new ToolStrip();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -55,6 +55,14 @@
             btCrear.UseVisualStyleBackColor = true;
             btCrear.Click += btCrear_Click;
             // 
+            // toolStripLabel1
+            // 
+            toolStripLabel1.ForeColor = Color.White;
+            toolStripLabel1.Name = "toolStripLabel1";
+            toolStripLabel1.Size = new Size(155, 46);
+            toolStripLabel1.Text = "BIKERIDE";
+            toolStripLabel1.Click += toolStripLabel1_Click;
+            // 
             // toolStrip1
             // 
             toolStrip1.BackColor = Color.Blue;
@@ -68,14 +76,6 @@
             toolStrip1.TabIndex = 2;
             toolStrip1.Text = "toolStrip1";
             toolStrip1.ItemClicked += toolStrip1_ItemClicked;
-            // 
-            // toolStripLabel1
-            // 
-            toolStripLabel1.ForeColor = Color.White;
-            toolStripLabel1.Name = "toolStripLabel1";
-            toolStripLabel1.Size = new Size(54, 22);
-            toolStripLabel1.Text = "BIKERIDE";
-            toolStripLabel1.Click += toolStripLabel1_Click;
             // 
             // Menu
             // 
@@ -97,7 +97,7 @@
 
         private Button btUsuario;
         private Button btCrear;
-        private ToolStrip toolStrip1;
         private ToolStripLabel toolStripLabel1;
+        private ToolStrip toolStrip1;
     }
 }
